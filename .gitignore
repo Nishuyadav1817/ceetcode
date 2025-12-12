@@ -1,0 +1,4 @@
+node_modules
+fronted/.parcel-cache/
+fronted/.parcel-cache/
+.env

@@ -1,0 +1,56 @@
+const  mongoose  = require("mongoose");
+
+const {Schema}=mongoose;
+
+const SubmitSchema=new Schema({
+          
+   userId:{
+    type:Schema.Types.ObjectId,
+    ref:'user',
+    require:true
+   },
+   problemId: {
+    type: Schema.Types.ObjectId,
+    ref: 'problem',
+    required: true
+  },
+  code: {
+    type: String,
+    required: true
+  },
+  language: {
+    type: String,
+    required: true,
+    enum: ['javascript', 'cpp', 'java'] 
+  },
+  status: {
+    type: String,
+    enum: ['pending', 'accepted', 'wrong', 'error'],
+    default: 'pending'
+  },
+  runtime: {
+    type: Number, 
+    default: 0
+  },
+  memory: {
+    type: Number,  
+    default: 0
+  },
+  errorMessage: {
+    type: String,
+    default: ''
+  },
+  testCasesPassed: {
+    type: Number,
+    default: 0
+  },
+  testCasesTotal: {  
+    type: Number,
+    default: 0
+  }
+}, { 
+ 
+});
+
+const Submit=mongoose.model('submit',SubmitSchema);
+module.exports=Submit;

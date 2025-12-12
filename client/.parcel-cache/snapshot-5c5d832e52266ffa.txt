@@ -1,0 +1,24 @@
+23
+48C:\Users\prath\OneDrive\Desktop\1616\client\code134100338270207956 1
+90C:\Users\prath\OneDrive\Desktop\1616\client\image\cdb2bf3e-737a-41bd-873c-b79d7872bad5.png134060614121326762 0
+49C:\Users\prath\OneDrive\Desktop\1616\client\image134100338270273479 1
+57C:\Users\prath\OneDrive\Desktop\1616\client\code\Admin.js134062984557658612 0
+54C:\Users\prath\OneDrive\Desktop\1616\client\index.html134052754923159152 0
+61C:\Users\prath\OneDrive\Desktop\1616\client\package-lock.json134100315585080385 0
+56C:\Users\prath\OneDrive\Desktop\1616\client\package.json134100339995388409 0
+53C:\Users\prath\OneDrive\Desktop\1616\client\style.css134062990051062626 0
+62C:\Users\prath\OneDrive\Desktop\1616\client\code\adminlogin.js134061517893932026 0
+60C:\Users\prath\OneDrive\Desktop\1616\client\code\adminreg.js134062981282575570 0
+55C:\Users\prath\OneDrive\Desktop\1616\client\code\App.js134052757975391950 0
+61C:\Users\prath\OneDrive\Desktop\1616\client\code\authSlice.js134062961724097662 0
+63C:\Users\prath\OneDrive\Desktop\1616\client\code\axiosClient.js134100310017791261 0
+62C:\Users\prath\OneDrive\Desktop\1616\client\code\createprob.js134058881869403572 0
+60C:\Users\prath\OneDrive\Desktop\1616\client\code\Homepage.js134062054528267401 0
+57C:\Users\prath\OneDrive\Desktop\1616\client\code\index.js134062964850433454 0
+57C:\Users\prath\OneDrive\Desktop\1616\client\code\Login.js134061509733282428 0
+59C:\Users\prath\OneDrive\Desktop\1616\client\code\probdel.js134062981006176354 0
+59C:\Users\prath\OneDrive\Desktop\1616\client\code\problem.js134062988729826876 0
+60C:\Users\prath\OneDrive\Desktop\1616\client\code\Register.js134061503487284671 0
+58C:\Users\prath\OneDrive\Desktop\1616\client\code\solved.js134062321433882274 0
+57C:\Users\prath\OneDrive\Desktop\1616\client\code\store.js134061941882818506 0
+58C:\Users\prath\OneDrive\Desktop\1616\client\code\subhis.js134062350616256646 0
