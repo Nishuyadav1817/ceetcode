@@ -22,10 +22,13 @@ console.log(user)
          
        const fetchproblem=async () => {
         try{
+           console.log("Fetching problems...");
            const {data}=await axiosClient.get('/problem/getAllProblem');
+           console.log("Data received:", data);
            setproblem(data);
         }catch(error){
              const err=error;
+             console.log(err);
         }
        }
 

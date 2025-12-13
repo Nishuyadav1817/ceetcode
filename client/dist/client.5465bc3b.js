@@ -47107,12 +47107,12 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-const baseURL = 'http://localhost:1616';
+const baseURL = "https://ceetcode-cyan.vercel.app";
+console.log("API URL:", baseURL);
 const axiosClient = (0, _axiosDefault.default).create({
     baseURL,
-    withCredentials: true,
     headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json"
     }
 });
 exports.default = axiosClient;
@@ -54534,10 +54534,13 @@ function Homepage() {
     (0, _react.useEffect)(()=>{
         const fetchproblem = async ()=>{
             try {
+                console.log("Fetching problems...");
                 const { data } = await (0, _axiosClientDefault.default).get('/problem/getAllProblem');
+                console.log("Data received:", data);
                 setproblem(data);
             } catch (error) {
                 const err = error;
+                console.log(err);
             }
         };
         const fetchSolvedProblems = async ()=>{
@@ -54572,12 +54575,12 @@ function Homepage() {
                             children: "Ceetcode"
                         }, void 0, false, {
                             fileName: "code/Homepage.js",
-                            lineNumber: 71,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "code/Homepage.js",
-                        lineNumber: 70,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -54590,12 +54593,12 @@ function Homepage() {
                                     children: "Solved Problems"
                                 }, void 0, false, {
                                     fileName: "code/Homepage.js",
-                                    lineNumber: 76,
+                                    lineNumber: 79,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 76,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this),
                             user ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -54605,12 +54608,12 @@ function Homepage() {
                                     children: "Logout"
                                 }, void 0, false, {
                                     fileName: "code/Homepage.js",
-                                    lineNumber: 79,
+                                    lineNumber: 82,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 79,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -54619,12 +54622,12 @@ function Homepage() {
                                     children: "Login"
                                 }, void 0, false, {
                                     fileName: "code/Homepage.js",
-                                    lineNumber: 83,
+                                    lineNumber: 86,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 83,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -54636,7 +54639,7 @@ function Homepage() {
                                         title: "Admin"
                                     }, void 0, false, {
                                         fileName: "code/Homepage.js",
-                                        lineNumber: 86,
+                                        lineNumber: 89,
                                         columnNumber: 19
                                     }, this),
                                     "  ",
@@ -54644,19 +54647,19 @@ function Homepage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 86,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "code/Homepage.js",
-                        lineNumber: 73,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "code/Homepage.js",
-                lineNumber: 69,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54675,7 +54678,7 @@ function Homepage() {
                                 children: "All Difficulty"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 97,
+                                lineNumber: 100,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -54683,7 +54686,7 @@ function Homepage() {
                                 children: "Easy"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 98,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -54691,7 +54694,7 @@ function Homepage() {
                                 children: "Medium"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 99,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -54699,13 +54702,13 @@ function Homepage() {
                                 children: "Hard"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 100,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "code/Homepage.js",
-                        lineNumber: 92,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -54721,7 +54724,7 @@ function Homepage() {
                                 children: "All Tags"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 108,
+                                lineNumber: 111,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -54729,7 +54732,7 @@ function Homepage() {
                                 children: "Array"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 109,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -54737,7 +54740,7 @@ function Homepage() {
                                 children: "String"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 110,
+                                lineNumber: 113,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -54745,7 +54748,7 @@ function Homepage() {
                                 children: "Graph"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 111,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -54753,19 +54756,19 @@ function Homepage() {
                                 children: "Dynamic Programming"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 112,
+                                lineNumber: 115,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "code/Homepage.js",
-                        lineNumber: 103,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "code/Homepage.js",
-                lineNumber: 91,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -54775,7 +54778,7 @@ function Homepage() {
                     children: "No problems found!"
                 }, void 0, false, {
                     fileName: "code/Homepage.js",
-                    lineNumber: 121,
+                    lineNumber: 124,
                     columnNumber: 5
                 }, this) : filteredProblems.map((p)=>{
                     const isSolved = Array.isArray(solvedproblem) ? solvedproblem.some((sp)=>sp._id === p._id) : false;
@@ -54786,7 +54789,7 @@ function Homepage() {
                                 children: p.title
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 135,
+                                lineNumber: 138,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -54796,13 +54799,13 @@ function Homepage() {
                                         children: p.difficulty
                                     }, void 0, false, {
                                         fileName: "code/Homepage.js",
-                                        lineNumber: 137,
+                                        lineNumber: 140,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 136,
+                                lineNumber: 139,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -54812,7 +54815,7 @@ function Homepage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 139,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
@@ -54821,25 +54824,25 @@ function Homepage() {
                                 children: "View Problem"
                             }, void 0, false, {
                                 fileName: "code/Homepage.js",
-                                lineNumber: 140,
+                                lineNumber: 143,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, p._id, true, {
                         fileName: "code/Homepage.js",
-                        lineNumber: 129,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "code/Homepage.js",
-                lineNumber: 119,
+                lineNumber: 122,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "code/Homepage.js",
-        lineNumber: 67,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }

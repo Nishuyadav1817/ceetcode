@@ -13,13 +13,22 @@ const Submitproblem=require("./Submitcode/submitAuth")
 const cors = require('cors'); 
 
 
+const allowedOrigins = [
+  "http://localhost:1234",                  // local frontend
+  "https://ceetcode-pratham.netlify.app"    // deployed frontend
+];
+
 app.use(cors({
-   origin: ['http://localhost:1234',
-   "https://ceetcode-pratham.netlify.app"
-],
-    credentials: true ,
-      methods: ['GET','POST','PUT','DELETE','OPTIONS'],
-}))
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+  methods: ['GET','POST','PUT','DELETE','OPTIONS']
+}));
 
 //Routing Handling
 app.use("/user", AuthRouter);
