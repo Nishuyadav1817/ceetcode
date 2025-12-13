@@ -1,26 +1,29 @@
-const express= require("express");
-const app=express();
-require("dotenv").config();
-const main=require('./db');
-const cookiparcer=require('cookie-parser')
+// server/index.js
+import express from "express";
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
+import AuthRouter from "./UserAuth.js";
+import ProblemRouter from "./Questions/problemauth.js";
+import Submitproblem from "./Submitcode/submitAuth.js";
+import main from "./db.js";
+import Redis from "./redis.js";
+
+dotenv.config();
+const app = express();
+
 app.use(express.json());
-app.use(cookiparcer());
-const AuthRouter=require('./UserAuth')
-const Validator=require('./Validator');
-const Redis=require("./redis");
-const ProblemRouter=require('./Questions/problemauth')
-const Submitproblem=require("./Submitcode/submitAuth")
-const cors = require('cors'); 
+app.use(cookieParser());
 
-
+// CORS setup for Vercel + local dev
 const allowedOrigins = [
-  "http://localhost:1234",                  // local frontend
-  "https://ceetcode-3atk.vercel.app"    // deployed frontend
+  "http://localhost:1234",                 // local frontend
+  "https://ceetcode-3atk.vercel.app"      // deployed frontend
 ];
 
 app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
+  origin: function(origin, callback){
+    if(!origin || allowedOrigins.includes(origin)){
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));
@@ -30,32 +33,24 @@ app.use(cors({
   methods: ['GET','POST','PUT','DELETE','OPTIONS']
 }));
 
-//Routing Handling
+// Handle preflight OPTIONS requests
+app.options('*', cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
+
+// Routes
 app.use("/user", AuthRouter);
-app.use("/problem" ,ProblemRouter);
-app.use("/submit",Submitproblem);
+app.use("/problem", ProblemRouter);
+app.use("/submit", Submitproblem);
 
-
-
-
-
-
-
-const InitalizeConnection = async ()=>{
-    try{
-
-        await Promise.all([main(),Redis.connect()]);
-        console.log("DB Connected");
-        
-        app.listen(process.env.PORT, ()=>{
-            console.log("Server listening at given port number: ");
-        })
-
-    }
-    catch(err){
-        console.log("Error: "+err);
-    }
+// Serverless export for Vercel
+export default async function handler(req, res) {
+  try {
+    await Promise.all([main(), Redis.connect()]);
+    app(req, res);
+  } catch(err) {
+    console.error("Error:", err);
+    res.status(500).send("Internal Server Error");
+  }
 }
-
-
-InitalizeConnection();
