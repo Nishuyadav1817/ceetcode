@@ -87,7 +87,7 @@ console.log(user)
             <li><NavLink to="/login" className="hp-nav-item">Login</NavLink></li>
           )}
           
-            <li > <User size={24} className="cursor-pointer " title="Admin" />  {user.firstName}</li>
+            <li > <User size={24} className="cursor-pointer " title="Admin" />  {user?.firstName}</li>
         </ul>
       </nav>
 

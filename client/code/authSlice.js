@@ -19,7 +19,7 @@ export const loginUser = createAsyncThunk(
   async (credentials, { rejectWithValue }) => {
     try {
       const response = await axiosClient.post('/user/login', credentials);
-       user=response.data.user;
+      
     const { user, Token } = response.data;
 
       if (user && Token) {
