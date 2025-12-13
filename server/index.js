@@ -13,9 +13,9 @@ const Submitproblem=require("./Submitcode/submitAuth")
 const cors = require('cors'); 
 
 const allowedOrigins = [
-  "http://localhost:1234",                  // local frontend
-  "https://ceetcode-q4z2.vercel.app/" ,
-   "https://ceetcode-pratham.netlify.app"
+  "http://localhost:1234",
+  "https://ceetcode-q4z2.vercel.app",
+  "https://ceetcode-pratham.netlify.app"
 ];
 
 app.use(cors({
@@ -27,8 +27,10 @@ app.use(cors({
     }
   },
   credentials: true,
-  methods: ['GET','POST','PUT','DELETE','OPTIONS']
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
 
 //Routing Handling
 app.use("/user", AuthRouter);
