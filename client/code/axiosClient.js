@@ -1,15 +1,15 @@
-const baseURL = process.env.PARCEL_API_URL || "https://ceetcode-omega.vercel.app";
-
-console.log("API URL:", baseURL);
-
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL,
-  headers: { "Content-Type": "application/json" }
+    baseURL: "https://ceetcode-omega.vercel.app",
+    withCredentials: true,
+    headers: {
+        "Content-Type": "application/json"
+    }
 });
 
 export default axiosClient;
+
 
 
 
