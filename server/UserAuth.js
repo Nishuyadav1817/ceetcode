@@ -32,6 +32,7 @@ AuthRouter.post("/register", async (req, res)=>{
    
   res.status(200).json({ 
         user: reply, 
+          Token,
         message: "User registered successfully" });
 
     }
@@ -124,6 +125,7 @@ AuthRouter.get('/check',UserVerify, (req,res)=>{
       
     res.status(200).json({
         user:reply,
+          Token,
         message:"Valid User"
         
     });
