@@ -42985,7 +42985,15 @@ const registerUser = (0, _toolkit.createAsyncThunk)('auth/register', async (user
 const loginUser = (0, _toolkit.createAsyncThunk)('auth/login', async (credentials, { rejectWithValue })=>{
     try {
         const response = await (0, _axiosClientDefault.default).post('/user/login', credentials);
-        return response.data.user;
+        const { user, Token } = response.data;
+        if (user && Token) {
+            localStorage.setItem('user', JSON.stringify(user));
+            localStorage.setItem('token', Token); // ✅ important
+        }
+        return {
+            user,
+            Token
+        };
     } catch (error) {
         return rejectWithValue({
             message: error.response?.data?.message || 'Auth check failed'
@@ -47113,6 +47121,11 @@ const axiosClient = (0, _axiosDefault.default).create({
     headers: {
         "Content-Type": "application/json"
     }
+});
+axiosClient.interceptors.request.use((config)=>{
+    const token = localStorage.getItem('token');
+    if (token) config.headers.Authorization = `Bearer ${token}`;
+    return config;
 });
 exports.default = axiosClient;
 

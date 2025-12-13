@@ -80,6 +80,7 @@ AuthRouter.post("/login" ,async(req,res) =>{
      console.log(reply)
      res.status(200).json({ 
         user: reply, 
+        Token,
         message: "User Logined successfully" });
 
     }catch(err){
@@ -124,6 +125,7 @@ AuthRouter.get('/check',UserVerify, (req,res)=>{
     res.status(200).json({
         user:reply,
         message:"Valid User"
+        
     });
 })
 // Fetch Data

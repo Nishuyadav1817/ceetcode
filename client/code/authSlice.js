@@ -20,7 +20,14 @@ export const loginUser = createAsyncThunk(
     try {
       const response = await axiosClient.post('/user/login', credentials);
        
-      return response.data.user;
+    const { user, Token } = response.data;
+
+      if (user && Token) {
+        localStorage.setItem('user', JSON.stringify(user));
+        localStorage.setItem('token', Token); // ✅ important
+      }
+
+      return { user, Token };
     } catch (error) {
      return rejectWithValue({ message: error.response?.data?.message || 'Auth check failed' });
     }
