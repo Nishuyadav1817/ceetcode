@@ -17,18 +17,14 @@ app.use(cookieParser());
 
 // CORS setup for Vercel + local dev
 const allowedOrigins = [
-  "http://localhost:1234",                 // local frontend
-  "https://ceetcode-3atk.vercel.app"      // deployed frontend
+  "http://localhost:1234",                 
+  "https://ceetcode-3atk.vercel.app",      // frontend
+  "https://ceetcode-cyan.vercel.app",      // backend itself (optional)
+  "https://ceetcode-omega.vercel.app"      // if you use this backend
 ];
 
 app.use(cors({
-  origin: function(origin, callback){
-    if(!origin || allowedOrigins.includes(origin)){
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
+  origin: allowedOrigins,
   credentials: true,
   methods: ['GET','POST','PUT','DELETE','OPTIONS']
 }));
