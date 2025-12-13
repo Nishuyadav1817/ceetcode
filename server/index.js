@@ -15,7 +15,7 @@ const cors = require('cors');
 
 const allowedOrigins = [
   "http://localhost:1234",                  // local frontend
-  "https://ceetcode-pratham.netlify.app"    // deployed frontend
+  "https://ceetcode-3atk.vercel.app/"    // deployed frontend
 ];
 
 app.use(cors({
