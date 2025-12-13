@@ -174,7 +174,7 @@ AuthRouter.post("/admin/registor",AdminVerify,async (req,res) =>{
         }
         console.log(reply)
   res.status(200).json({ 
-     
+       Token,
         message: "admins registered successfully" });
 
     }

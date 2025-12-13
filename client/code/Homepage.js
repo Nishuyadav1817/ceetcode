@@ -22,6 +22,7 @@ console.log(user)
          
        const fetchproblem=async () => {
         try{
+          
            console.log("Fetching problems...");
            const {data}=await axiosClient.get('/problem/getAllProblem');
            console.log("Data received:", data);

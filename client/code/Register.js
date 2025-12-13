@@ -107,7 +107,7 @@ function Register() {
 
       
         <button className="btn" type="submit">
-         Registor
+         Register
         </button>
        
       </form>
