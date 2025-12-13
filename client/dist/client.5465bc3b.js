@@ -47107,10 +47107,9 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-const baseURL = "https://ceetcode-cyan.vercel.app";
-console.log("API URL:", baseURL);
 const axiosClient = (0, _axiosDefault.default).create({
-    baseURL,
+    baseURL: "https://ceetcode-omega.vercel.app",
+    withCredentials: true,
     headers: {
         "Content-Type": "application/json"
     }
