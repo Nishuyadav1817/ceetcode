@@ -169,6 +169,7 @@ AuthRouter.post("/admin/registor",AdminVerify,async (req,res) =>{
        const reply = {
             firstName: NewUser.FirstName,
             emailId: NewUser.EmailId,
+            Token,
             _id: NewUser._id,
             role:NewUser.role,
         }
