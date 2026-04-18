@@ -26,7 +26,7 @@ function Register() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      Navigate('/');
+      Navigate('/login');
     }
   }, [isAuthenticated]);
 
