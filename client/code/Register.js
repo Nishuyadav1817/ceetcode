@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
 import {registerUser} from './authSlice';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router'; 
@@ -16,7 +16,7 @@ function Register() {
     password: z.string().min(6, 'Password must be at least 6 characters'),
   });
    const Dispatch=useDispatch();
-   const Navigate=useNavigate();
+  //  const Navigate=useNavigate();
     const { isAuthenticated, loading, error } = useSelector((state) => state.auth);
    
   const {register, handleSubmit,formState: { errors },} = 
