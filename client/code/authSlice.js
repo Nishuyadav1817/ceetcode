@@ -99,7 +99,7 @@ const authSlice = createSlice({
       })
       .addCase(registerUser.fulfilled, (state, action) => {
         state.loading = false;
-        state.isAuthenticated = !!action.payload.Token;
+        state.isAuthenticated = !!action.payload;
        state.user = action.payload
       
       })
