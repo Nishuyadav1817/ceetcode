@@ -17486,7 +17486,7 @@ function Index() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                     path: "/register",
                     element: isAuthenticated ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Navigate), {
-                        to: "/login"
+                        to: "/"
                     }, void 0, false, {
                         fileName: "code/index.js",
                         lineNumber: 35,
@@ -17494,7 +17494,7 @@ function Index() {
                     }, void 0) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
                         lineNumber: 35,
-                        columnNumber: 88
+                        columnNumber: 83
                     }, void 0),
                     children: " "
                 }, void 0, false, {
@@ -17647,10 +17647,9 @@ var _reactHookForm = require("react-hook-form");
 var _zod = require("@hookform/resolvers/zod");
 var _zod1 = require("zod");
 var _reactRedux = require("react-redux");
-// import { useNavigate } from 'react-router';
+var _reactRouter = require("react-router");
 var _authSlice = require("./authSlice");
 var _react = require("react");
-var _reactRouter = require("react-router");
 var _s = $RefreshSig$();
 function Register() {
     _s();
@@ -17660,13 +17659,13 @@ function Register() {
         password: (0, _zod1.z).string().min(6, 'Password must be at least 6 characters')
     });
     const Dispatch = (0, _reactRedux.useDispatch)();
-    //  const Navigate=useNavigate();
+    const Navigate = (0, _reactRouter.useNavigate)();
     const { isAuthenticated, loading, error } = (0, _reactRedux.useSelector)((state)=>state.auth);
     const { register, handleSubmit, formState: { errors } } = (0, _reactHookForm.useForm)({
         resolver: (0, _zod.zodResolver)(validator)
     });
     (0, _react.useEffect)(()=>{
-        if (isAuthenticated) Navigate('/login');
+        if (isAuthenticated) Navigate('/');
     }, [
         isAuthenticated
     ]);
@@ -17892,9 +17891,10 @@ function Register() {
         columnNumber: 1
     }, this);
 }
-_s(Register, "OGFKWmXX1qlLLMz7JEo0nNOwvqI=", false, function() {
+_s(Register, "mfvmVUzyWzDP/4LNc3uyvCCVHXk=", false, function() {
     return [
         (0, _reactRedux.useDispatch),
+        (0, _reactRouter.useNavigate),
         (0, _reactRedux.useSelector),
         (0, _reactHookForm.useForm)
     ];
@@ -42975,10 +42975,18 @@ var _axiosClientDefault = parcelHelpers.interopDefault(_axiosClient);
 const registerUser = (0, _toolkit.createAsyncThunk)('auth/register', async (userData, { rejectWithValue })=>{
     try {
         const response = await (0, _axiosClientDefault.default).post('/user/register', userData);
-        return response.data.user;
+        const { user, Token } = response.data;
+        if (user && Token) {
+            localStorage.setItem('user', JSON.stringify(user));
+            localStorage.setItem('token', Token);
+        }
+        return {
+            user,
+            Token
+        };
     } catch (error) {
         return rejectWithValue({
-            message: error.response?.data?.message || 'Login failed'
+            message: error.response?.data?.message || 'Register failed'
         });
     }
 });
@@ -43046,7 +43054,7 @@ const authSlice = (0, _toolkit.createSlice)({
             state.error = null;
         }).addCase(registerUser.fulfilled, (state, action)=>{
             state.loading = false;
-            state.isAuthenticated = !!action.payload;
+            state.isAuthenticated = !!action.payload.Token;
             state.user = action.payload;
         }).addCase(registerUser.rejected, (state, action)=>{
             state.loading = false;

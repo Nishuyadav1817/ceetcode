@@ -32,7 +32,7 @@ const dispatch = useDispatch();
     <BrowserRouter>
     <Routes>
     <Route path="/" element={isAuthenticated?<Homepage></Homepage>:<Navigate to='/register'></Navigate>}></Route>
-    <Route path="/register" element={isAuthenticated?<Navigate to='/login'></Navigate>:<Registor></Registor>}> </Route>
+    <Route path="/register" element={isAuthenticated?<Navigate to='/'></Navigate>:<Registor></Registor>}> </Route>
     <Route path="/login"   element={ isAuthenticated?<Navigate to='/'></Navigate>:<Login></Login>}></Route>
      <Route path="/solved" element={<Solved />} />
     <Route path="/adminreg" element={<Adminreg />}></Route>
