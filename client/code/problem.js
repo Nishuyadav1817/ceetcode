@@ -215,14 +215,14 @@ if (!problem) {
                 </div>
               )}
 
-              {activeLeftTab === 'submissions' && (
+              {/* {activeLeftTab === 'submissions' && (
                 <div className="submissions">
                   <h2>My Submissions</h2>
                   <div>
                     <SubmissionHistory problemId={problemId} />
                   </div>
                 </div>
-              )}
+              )} */}
             </>
           )}
         </div>

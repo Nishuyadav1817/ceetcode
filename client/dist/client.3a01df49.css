@@ -806,7 +806,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .solution-card {
-  background: linear-gradient(135deg, #e0f2fe, #fff);
+  color: #fff;
+  background: #1e1e2f;
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   max-width: 800px;
@@ -855,7 +856,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .expected {
-  color: #16a34a;
+  color: #ca1804;
 }
 
 .actual {
@@ -1086,8 +1087,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .solution-header {
-  color: #fff;
-  background-color: #00762c;
+  color: #facc15;
+  background-color: #444;
   font-size: x-large;
 }
 /*# sourceMappingURL=client.3a01df49.css.map */

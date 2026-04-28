@@ -1,4 +1,5 @@
 import react from "react";
+import Ai from "./Ai/index";
 import ReactDOM from "react-dom/client"
 import Registor from "./Register";
 import Login from "./Login";
@@ -15,7 +16,8 @@ import Admin from "./Admin";
 import Createproblem from "./createprob";
 import NewAdmin from "./adminreg";
 import Probdel from "./probdel";
-import Login from "./Login"
+import Login from "./Login";
+ import Model from "./Ai/App";
 
 function Index(){
 
@@ -35,6 +37,7 @@ const dispatch = useDispatch();
     <Route path="/register" element={isAuthenticated?<Navigate to='/'></Navigate>:<Registor></Registor>}> </Route>
     <Route path="/login"   element={ isAuthenticated?<Navigate to='/'></Navigate>:<Login></Login>}></Route>
      <Route path="/solved" element={<Solved />} />
+    <Route path="/ai" element={<Model/>}/>
     <Route path="/adminreg" element={<Adminreg />}></Route>
     <Route path="/admin" element={<Admin/>} />
     <Route path="/admin/delete" element={<Probdel/>}></Route>

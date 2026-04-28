@@ -17427,6 +17427,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _index = require("./Ai/index");
+var _indexDefault = parcelHelpers.interopDefault(_index);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _register = require("./Register");
@@ -17452,6 +17454,8 @@ var _adminreg = require("./adminreg");
 var _adminregDefault = parcelHelpers.interopDefault(_adminreg);
 var _probdel = require("./probdel");
 var _probdelDefault = parcelHelpers.interopDefault(_probdel);
+var _app = require("./Ai/App");
+var _appDefault = parcelHelpers.interopDefault(_app);
 var _s = $RefreshSig$();
 function Index() {
     _s();
@@ -17469,18 +17473,18 @@ function Index() {
                     path: "/",
                     element: isAuthenticated ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 46
                     }, void 0) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Navigate), {
                         to: "/register"
                     }, void 0, false, {
                         fileName: "code/index.js",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 68
                     }, void 0)
                 }, void 0, false, {
                     fileName: "code/index.js",
-                    lineNumber: 34,
+                    lineNumber: 36,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -17489,17 +17493,17 @@ function Index() {
                         to: "/"
                     }, void 0, false, {
                         fileName: "code/index.js",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 54
                     }, void 0) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 83
                     }, void 0),
                     children: " "
                 }, void 0, false, {
                     fileName: "code/index.js",
-                    lineNumber: 35,
+                    lineNumber: 37,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -17508,36 +17512,12 @@ function Index() {
                         to: "/"
                     }, void 0, false, {
                         fileName: "code/index.js",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 54
                     }, void 0) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
-                        lineNumber: 36,
-                        columnNumber: 83
-                    }, void 0)
-                }, void 0, false, {
-                    fileName: "code/index.js",
-                    lineNumber: 36,
-                    columnNumber: 5
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/solved",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _solvedDefault.default), {}, void 0, false, {
-                        fileName: "code/index.js",
-                        lineNumber: 37,
-                        columnNumber: 37
-                    }, void 0)
-                }, void 0, false, {
-                    fileName: "code/index.js",
-                    lineNumber: 37,
-                    columnNumber: 6
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/adminreg",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminloginDefault.default), {}, void 0, false, {
-                        fileName: "code/index.js",
                         lineNumber: 38,
-                        columnNumber: 38
+                        columnNumber: 83
                     }, void 0)
                 }, void 0, false, {
                     fileName: "code/index.js",
@@ -17545,23 +17525,23 @@ function Index() {
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/admin",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminDefault.default), {}, void 0, false, {
+                    path: "/solved",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _solvedDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
                         lineNumber: 39,
-                        columnNumber: 35
+                        columnNumber: 37
                     }, void 0)
                 }, void 0, false, {
                     fileName: "code/index.js",
                     lineNumber: 39,
-                    columnNumber: 5
+                    columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/admin/delete",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _probdelDefault.default), {}, void 0, false, {
+                    path: "/ai",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
                         lineNumber: 40,
-                        columnNumber: 42
+                        columnNumber: 32
                     }, void 0)
                 }, void 0, false, {
                     fileName: "code/index.js",
@@ -17569,11 +17549,11 @@ function Index() {
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/admin/register",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminregDefault.default), {}, void 0, false, {
+                    path: "/adminreg",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminloginDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
                         lineNumber: 41,
-                        columnNumber: 44
+                        columnNumber: 38
                     }, void 0)
                 }, void 0, false, {
                     fileName: "code/index.js",
@@ -17581,11 +17561,11 @@ function Index() {
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/admin/create",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createprobDefault.default), {}, void 0, false, {
+                    path: "/admin",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
                         lineNumber: 42,
-                        columnNumber: 42
+                        columnNumber: 35
                     }, void 0)
                 }, void 0, false, {
                     fileName: "code/index.js",
@@ -17593,26 +17573,62 @@ function Index() {
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/problem/:problemId",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _problemDefault.default), {}, void 0, false, {
+                    path: "/admin/delete",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _probdelDefault.default), {}, void 0, false, {
                         fileName: "code/index.js",
                         lineNumber: 43,
-                        columnNumber: 48
+                        columnNumber: 42
                     }, void 0)
                 }, void 0, false, {
                     fileName: "code/index.js",
                     lineNumber: 43,
                     columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                    path: "/admin/register",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminregDefault.default), {}, void 0, false, {
+                        fileName: "code/index.js",
+                        lineNumber: 44,
+                        columnNumber: 44
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "code/index.js",
+                    lineNumber: 44,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                    path: "/admin/create",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createprobDefault.default), {}, void 0, false, {
+                        fileName: "code/index.js",
+                        lineNumber: 45,
+                        columnNumber: 42
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "code/index.js",
+                    lineNumber: 45,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                    path: "/problem/:problemId",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _problemDefault.default), {}, void 0, false, {
+                        fileName: "code/index.js",
+                        lineNumber: 46,
+                        columnNumber: 48
+                    }, void 0)
+                }, void 0, false, {
+                    fileName: "code/index.js",
+                    lineNumber: 46,
+                    columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
             fileName: "code/index.js",
-            lineNumber: 33,
+            lineNumber: 35,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "code/index.js",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
@@ -17632,7 +17648,7 @@ $RefreshReg$(_c, "Index");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./Register":"lfd1L","./Login":"gPWuL","react-router":"2jawN","react-redux":"hbNxT","./authSlice":"brKVI","./Homepage":"bpDv2","./solved":"6FBwL","./problem":"kCPfv","./adminlogin":"fAcmU","./Admin":"5wePX","./createprob":"9KD0g","./adminreg":"1ldDh","./probdel":"1qdIe","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lfd1L":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./Register":"lfd1L","./Login":"gPWuL","react-router":"2jawN","react-redux":"hbNxT","./authSlice":"brKVI","./Homepage":"bpDv2","./solved":"6FBwL","./problem":"kCPfv","./adminlogin":"fAcmU","./Admin":"5wePX","./createprob":"9KD0g","./adminreg":"1ldDh","./probdel":"1qdIe","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Ai/index":"4R1dv","./Ai/App":"7x0rW"}],"lfd1L":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$755a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$755a.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -54608,6 +54624,21 @@ function Homepage() {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
+                                    to: "/ai",
+                                    className: "hp-nav-item",
+                                    children: "ai chat"
+                                }, void 0, false, {
+                                    fileName: "code/Homepage.js",
+                                    lineNumber: 79,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "code/Homepage.js",
+                                lineNumber: 79,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                     to: "/solved",
                                     className: "hp-nav-item",
                                     children: "Solved Problems"
@@ -64657,35 +64688,6 @@ const ProblemPage = ()=>{
                                             fileName: "code/problem.js",
                                             lineNumber: 203,
                                             columnNumber: 17
-                                        }, undefined),
-                                        activeLeftTab === 'submissions' && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "submissions",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                    children: "My Submissions"
-                                                }, void 0, false, {
-                                                    fileName: "code/problem.js",
-                                                    lineNumber: 220,
-                                                    columnNumber: 19
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _subhisDefault.default), {
-                                                        problemId: problemId
-                                                    }, void 0, false, {
-                                                        fileName: "code/problem.js",
-                                                        lineNumber: 222,
-                                                        columnNumber: 21
-                                                    }, undefined)
-                                                }, void 0, false, {
-                                                    fileName: "code/problem.js",
-                                                    lineNumber: 221,
-                                                    columnNumber: 19
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "code/problem.js",
-                                            lineNumber: 219,
-                                            columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true)
@@ -68129,7 +68131,791 @@ $RefreshReg$(_c, "AdminDelete");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./axiosClient":"d2Dyq","lucide-react":"2I7qR","react-redux":"hbNxT","react-router":"2jawN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"2QXDf":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./axiosClient":"d2Dyq","lucide-react":"2I7qR","react-redux":"hbNxT","react-router":"2jawN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"4R1dv":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8c9f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$8c9f.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8c9f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _client = require("react-dom/client");
+var _clientDefault = parcelHelpers.interopDefault(_client);
+var _app = require("./App");
+var _appDefault = parcelHelpers.interopDefault(_app);
+var _mainCss = require("./Main.css");
+
+  $parcel$ReactRefreshHelpers$8c9f.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"jMk1U","react-dom/client":"hrvwu","./App":"7x0rW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Main.css":"6lSBL"}],"7x0rW":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a681 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a681.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a681.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>App);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sidebar = require("./Sidebar");
+var _sidebarDefault = parcelHelpers.interopDefault(_sidebar);
+var _chatArea = require("./ChatArea");
+var _chatAreaDefault = parcelHelpers.interopDefault(_chatArea);
+var _useSessions = require("./useSessions");
+var _mainCss = require("./Main.css");
+var _s = $RefreshSig$();
+function App() {
+    _s();
+    const { sessions, activeId, createSession, switchSession, deleteSession, updateSession } = (0, _useSessions.useSessions)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidebarDefault.default), {
+                sessions: sessions,
+                activeId: activeId,
+                onNew: ()=>createSession(),
+                onSwitch: switchSession,
+                onDelete: deleteSession
+            }, void 0, false, {
+                fileName: "code/Ai/App.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            activeId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatAreaDefault.default), {
+                activeId: activeId,
+                sessions: sessions,
+                onUpdate: updateSession
+            }, void 0, false, {
+                fileName: "code/Ai/App.jsx",
+                lineNumber: 27,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "code/Ai/App.jsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+}
+_s(App, "+QI1LyhvGCDWu1NnUIg7NoPIBb8=", false, function() {
+    return [
+        (0, _useSessions.useSessions)
+    ];
+});
+_c = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  $parcel$ReactRefreshHelpers$a681.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./Sidebar":"cA7Iq","./ChatArea":"5cdxJ","./useSessions":"i7CdA","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Main.css":"6lSBL"}],"cA7Iq":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$357e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$357e.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$357e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Sidebar);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _mainCss = require("./Main.css");
+function Sidebar({ sessions, activeId, onNew, onSwitch, onDelete }) {
+    const ids = Object.keys(sessions).reverse();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("aside", {
+        className: "sidebar",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "sidebar__header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "sidebar__logo",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "sidebar__logo-dot"
+                            }, void 0, false, {
+                                fileName: "code/Ai/Sidebar.jsx",
+                                lineNumber: 12,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "sidebar__logo-text",
+                                children: "Chatw/NY"
+                            }, void 0, false, {
+                                fileName: "code/Ai/Sidebar.jsx",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "code/Ai/Sidebar.jsx",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "sidebar__new-btn",
+                        onClick: onNew,
+                        children: "\uFF0B New Session"
+                    }, void 0, false, {
+                        fileName: "code/Ai/Sidebar.jsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "code/Ai/Sidebar.jsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "sidebar__label",
+                children: "Sessions"
+            }, void 0, false, {
+                fileName: "code/Ai/Sidebar.jsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: "sidebar__list",
+                children: ids.map((id)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: `session-item${id === activeId ? " session-item--active" : ""}`,
+                        onClick: ()=>onSwitch(id),
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "session-item__icon",
+                                children: "\u25C8"
+                            }, void 0, false, {
+                                fileName: "code/Ai/Sidebar.jsx",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "session-item__preview",
+                                children: sessions[id].preview || "New session"
+                            }, void 0, false, {
+                                fileName: "code/Ai/Sidebar.jsx",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "session-item__delete",
+                                title: "Delete session",
+                                onClick: (e)=>{
+                                    e.stopPropagation();
+                                    onDelete(id);
+                                },
+                                children: "\u2715"
+                            }, void 0, false, {
+                                fileName: "code/Ai/Sidebar.jsx",
+                                lineNumber: 33,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, id, true, {
+                        fileName: "code/Ai/Sidebar.jsx",
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "code/Ai/Sidebar.jsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "sidebar__footer",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "sidebar__uid-label",
+                        children: "Active Session ID"
+                    }, void 0, false, {
+                        fileName: "code/Ai/Sidebar.jsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "sidebar__uid-value",
+                        children: activeId || "\u2014"
+                    }, void 0, false, {
+                        fileName: "code/Ai/Sidebar.jsx",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "code/Ai/Sidebar.jsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "code/Ai/Sidebar.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+_c = Sidebar;
+var _c;
+$RefreshReg$(_c, "Sidebar");
+
+  $parcel$ReactRefreshHelpers$357e.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Main.css":"6lSBL"}],"6lSBL":[function() {},{}],"5cdxJ":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$59d8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$59d8.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$59d8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>ChatArea);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _message = require("./Message");
+var _mainCss = require("./Main.css");
+var _s = $RefreshSig$();
+const API_URL = "https://ai-bot-gamma-six.vercel.app/first";
+function ChatArea({ activeId, sessions, onUpdate }) {
+    _s();
+    const [input, setInput] = (0, _react.useState)("");
+    const [loading, setLoading] = (0, _react.useState)(false);
+    const messagesEndRef = (0, _react.useRef)(null);
+    const textareaRef = (0, _react.useRef)(null);
+    const messages = sessions[activeId]?.messages || [];
+    // Auto-scroll to bottom whenever messages change
+    (0, _react.useEffect)(()=>{
+        messagesEndRef.current?.scrollIntoView({
+            behavior: "smooth"
+        });
+    }, [
+        messages,
+        loading
+    ]);
+    // Auto-resize textarea
+    function handleInputChange(e) {
+        setInput(e.target.value);
+        const ta = textareaRef.current;
+        ta.style.height = "auto";
+        ta.style.height = Math.min(ta.scrollHeight, 160) + "px";
+    }
+    function handleKeyDown(e) {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage();
+        }
+    }
+    async function sendMessage() {
+        const msg = input.trim();
+        if (!msg || !activeId || loading) return;
+        // Optimistically add user message
+        onUpdate(activeId, {
+            role: "user",
+            text: msg
+        });
+        setInput("");
+        if (textareaRef.current) textareaRef.current.style.height = "auto";
+        setLoading(true);
+        try {
+            const res = await fetch(API_URL, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    id: activeId,
+                    msg
+                })
+            });
+            if (!res.ok) throw new Error(`Server error ${res.status}`);
+            const answer = await res.text();
+            onUpdate(activeId, {
+                role: "ai",
+                text: answer
+            });
+        } catch (err) {
+            onUpdate(activeId, {
+                role: "ai",
+                text: `\u{26A0} Could not reach the server.
+${err.message}`
+            });
+        } finally{
+            setLoading(false);
+        }
+    }
+    function clearChat() {
+        if (!activeId) return;
+        if (window.confirm("Clear this session's history?")) onUpdate(activeId, null); // null = clear signal
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+        className: "chat-area",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                className: "chat-area__header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "chat-area__header-left",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "chat-area__status-dot"
+                            }, void 0, false, {
+                                fileName: "code/Ai/ChatArea.jsx",
+                                lineNumber: 77,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "chat-area__model-name",
+                                children: " \xb7 Live"
+                            }, void 0, false, {
+                                fileName: "code/Ai/ChatArea.jsx",
+                                lineNumber: 78,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "code/Ai/ChatArea.jsx",
+                        lineNumber: 76,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "chat-area__clear-btn",
+                        onClick: clearChat,
+                        children: "\u232B Clear"
+                    }, void 0, false, {
+                        fileName: "code/Ai/ChatArea.jsx",
+                        lineNumber: 80,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "code/Ai/ChatArea.jsx",
+                lineNumber: 75,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "chat-area__messages",
+                children: [
+                    messages.length === 0 && !loading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "chat-area__empty",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "chat-area__empty-icon",
+                                children: "\u2B21"
+                            }, void 0, false, {
+                                fileName: "code/Ai/ChatArea.jsx",
+                                lineNumber: 89,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "chat-area__empty-title",
+                                children: "Start a conversation"
+                            }, void 0, false, {
+                                fileName: "code/Ai/ChatArea.jsx",
+                                lineNumber: 90,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "chat-area__empty-sub",
+                                children: "Your history will appear here."
+                            }, void 0, false, {
+                                fileName: "code/Ai/ChatArea.jsx",
+                                lineNumber: 91,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "code/Ai/ChatArea.jsx",
+                        lineNumber: 88,
+                        columnNumber: 11
+                    }, this) : messages.map((m, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _message.Message), {
+                            role: m.role,
+                            text: m.text
+                        }, i, false, {
+                            fileName: "code/Ai/ChatArea.jsx",
+                            lineNumber: 95,
+                            columnNumber: 13
+                        }, this)),
+                    loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _message.TypingIndicator), {}, void 0, false, {
+                        fileName: "code/Ai/ChatArea.jsx",
+                        lineNumber: 98,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        ref: messagesEndRef
+                    }, void 0, false, {
+                        fileName: "code/Ai/ChatArea.jsx",
+                        lineNumber: 99,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "code/Ai/ChatArea.jsx",
+                lineNumber: 86,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+                className: "chat-area__input-footer",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "chat-area__input-box",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                ref: textareaRef,
+                                className: "chat-area__textarea",
+                                rows: 1,
+                                placeholder: "Ask anything\u2026 (Enter to send)",
+                                value: input,
+                                onChange: handleInputChange,
+                                onKeyDown: handleKeyDown,
+                                disabled: loading
+                            }, void 0, false, {
+                                fileName: "code/Ai/ChatArea.jsx",
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "chat-area__send-btn",
+                                onClick: sendMessage,
+                                disabled: loading || !input.trim(),
+                                title: "Send",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    viewBox: "0 0 24 24",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    strokeWidth: "2",
+                                    strokeLinecap: "round",
+                                    strokeLinejoin: "round",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("line", {
+                                            x1: "22",
+                                            y1: "2",
+                                            x2: "11",
+                                            y2: "13"
+                                        }, void 0, false, {
+                                            fileName: "code/Ai/ChatArea.jsx",
+                                            lineNumber: 123,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("polygon", {
+                                            points: "22 2 15 22 11 13 2 9 22 2"
+                                        }, void 0, false, {
+                                            fileName: "code/Ai/ChatArea.jsx",
+                                            lineNumber: 124,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "code/Ai/ChatArea.jsx",
+                                    lineNumber: 121,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "code/Ai/ChatArea.jsx",
+                                lineNumber: 115,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "code/Ai/ChatArea.jsx",
+                        lineNumber: 104,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "chat-area__disclaimer",
+                        children: "AI responses may be inaccurate. Verify important information."
+                    }, void 0, false, {
+                        fileName: "code/Ai/ChatArea.jsx",
+                        lineNumber: 128,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "code/Ai/ChatArea.jsx",
+                lineNumber: 103,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "code/Ai/ChatArea.jsx",
+        lineNumber: 73,
+        columnNumber: 5
+    }, this);
+}
+_s(ChatArea, "xQ9IOI0PHRx2yx4WS2KGZug1zXo=");
+_c = ChatArea;
+var _c;
+$RefreshReg$(_c, "ChatArea");
+
+  $parcel$ReactRefreshHelpers$59d8.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./Message":"1zMw3","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Main.css":"6lSBL"}],"1zMw3":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$bf96 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$bf96.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bf96.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Message", ()=>Message);
+parcelHelpers.export(exports, "TypingIndicator", ()=>TypingIndicator);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _mainCss = require("./Main.css");
+function Message({ role, text }) {
+    const isUser = role === "user";
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `message message--${isUser ? "user" : "ai"}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "message__avatar",
+                children: isUser ? "U" : "AI"
+            }, void 0, false, {
+                fileName: "code/Ai/Message.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "message__bubble",
+                children: text
+            }, void 0, false, {
+                fileName: "code/Ai/Message.jsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "code/Ai/Message.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
+}
+_c = Message;
+function TypingIndicator() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "message message--ai",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "message__avatar",
+                children: "AI"
+            }, void 0, false, {
+                fileName: "code/Ai/Message.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "typing-indicator",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "typing-indicator__dot"
+                    }, void 0, false, {
+                        fileName: "code/Ai/Message.jsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "typing-indicator__dot"
+                    }, void 0, false, {
+                        fileName: "code/Ai/Message.jsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "typing-indicator__dot"
+                    }, void 0, false, {
+                        fileName: "code/Ai/Message.jsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "code/Ai/Message.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "code/Ai/Message.jsx",
+        lineNumber: 16,
+        columnNumber: 5
+    }, this);
+}
+_c1 = TypingIndicator;
+var _c, _c1;
+$RefreshReg$(_c, "Message");
+$RefreshReg$(_c1, "TypingIndicator");
+
+  $parcel$ReactRefreshHelpers$bf96.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Main.css":"6lSBL"}],"6lSBL":[function() {},{}],"6lSBL":[function() {},{}],"i7CdA":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$377c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$377c.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$377c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useSessions", ()=>useSessions);
+var _react = require("react");
+var _s = $RefreshSig$();
+const STORAGE_KEY = "nc_sessions";
+const ACTIVE_KEY = "nc_active_id";
+function genId() {
+    return "sess_" + Math.random().toString(36).slice(2, 8);
+}
+function load() {
+    try {
+        const s = localStorage.getItem(STORAGE_KEY);
+        const a = localStorage.getItem(ACTIVE_KEY);
+        return {
+            sessions: s ? JSON.parse(s) : {},
+            activeId: a || null
+        };
+    } catch  {
+        return {
+            sessions: {},
+            activeId: null
+        };
+    }
+}
+function save(sessions, activeId) {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions));
+        localStorage.setItem(ACTIVE_KEY, activeId || "");
+    } catch  {}
+}
+function useSessions() {
+    _s();
+    const [sessions, setSessions] = (0, _react.useState)({});
+    const [activeId, setActiveId] = (0, _react.useState)(null);
+    // Hydrate from localStorage on mount
+    (0, _react.useEffect)(()=>{
+        const { sessions: s, activeId: a } = load();
+        if (Object.keys(s).length > 0) {
+            setSessions(s);
+            setActiveId(a && s[a] ? a : Object.keys(s)[0]);
+        } else createSession(s);
+    }, []); // eslint-disable-line
+    // Persist whenever state changes
+    (0, _react.useEffect)(()=>{
+        if (Object.keys(sessions).length > 0) save(sessions, activeId);
+    }, [
+        sessions,
+        activeId
+    ]);
+    function createSession(existingSessions) {
+        const id = genId();
+        const base = existingSessions || sessions;
+        const next = {
+            ...base,
+            [id]: {
+                preview: "New session",
+                messages: []
+            }
+        };
+        setSessions(next);
+        setActiveId(id);
+        return id;
+    }
+    function switchSession(id) {
+        setActiveId(id);
+    }
+    function deleteSession(id) {
+        const next = {
+            ...sessions
+        };
+        delete next[id];
+        if (Object.keys(next).length === 0) {
+            const newId = genId();
+            next[newId] = {
+                preview: "New session",
+                messages: []
+            };
+            setSessions(next);
+            setActiveId(newId);
+        } else {
+            setSessions(next);
+            if (activeId === id) setActiveId(Object.keys(next)[0]);
+        }
+    }
+    // Called by ChatArea: msg = { role, text } or null (clear)
+    const updateSession = (0, _react.useCallback)((id, msg)=>{
+        setSessions((prev)=>{
+            const session = prev[id];
+            if (!session) return prev;
+            // null = clear
+            if (msg === null) return {
+                ...prev,
+                [id]: {
+                    ...session,
+                    messages: [],
+                    preview: "New session"
+                }
+            };
+            const newMessages = [
+                ...session.messages,
+                msg
+            ];
+            // Update preview from first user message
+            const firstUser = newMessages.find((m)=>m.role === "user");
+            const preview = firstUser ? firstUser.text.slice(0, 34) + (firstUser.text.length > 34 ? "\u2026" : "") : "New session";
+            return {
+                ...prev,
+                [id]: {
+                    ...session,
+                    messages: newMessages,
+                    preview
+                }
+            };
+        });
+    }, []);
+    return {
+        sessions,
+        activeId,
+        createSession,
+        switchSession,
+        deleteSession,
+        updateSession
+    };
+}
+_s(useSessions, "DkoxGpiksdokFYLMc2RwlvO3hEM=");
+
+  $parcel$ReactRefreshHelpers$377c.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6lSBL":[function() {},{}],"6lSBL":[function() {},{}],"2QXDf":[function(require,module,exports,__globalThis) {
 // import { configureStore } from '@reduxjs/toolkit';
 // import authReducer from './authSlice';
 // export const store = configureStore({
