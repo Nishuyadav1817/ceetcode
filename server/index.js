@@ -14,8 +14,8 @@ const cors = require('cors');
 
 const allowedOrigins = [
   "http://localhost:1234",
-  "https://ceetcode-ziw5.vercel.app",
-  "https://ceetcode-pratham.netlify.app"
+  "https://ceetcode-ziw5.vercel.app"
+  
 ];
 
 app.use(cors({
