@@ -76,7 +76,7 @@ console.log(user)
         </div>
         <ul className="hp-nav-links ">
          
-          <li><NavLink to="/ai" className="hp-nav-item">ai chat</NavLink></li>
+          <li><NavLink to="/ai" className="hp-nav-item">Ai Agent</NavLink></li>
           <li><NavLink to="/solved" className="hp-nav-item">Solved Problems</NavLink></li>
           {user ? (
          

@@ -54626,7 +54626,7 @@ function Homepage() {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.NavLink), {
                                     to: "/ai",
                                     className: "hp-nav-item",
-                                    children: "ai chat"
+                                    children: "Ai Agent"
                                 }, void 0, false, {
                                     fileName: "code/Homepage.js",
                                     lineNumber: 79,
